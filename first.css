@@ -1,0 +1,222 @@
+@font-face {
+    font-family: ShamoilFont;
+    src: url(assassin.woff2);
+}
+
+
+.website-name {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(background\ 1.jpg);
+    transition: .3s ease;
+    user-select: none;
+    /* filter: hue-rotate(150deg); */
+    animation: bg 20s linear infinite;
+}
+
+@keyframes bg {
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+.website-name.submitted {
+    transform: scale(0);
+}
+
+.website-name .blur {
+    /* background: #850808; */
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #fff;
+    outline: 2px groove white;
+    outline-offset: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    transition: .5s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    transform: scale(0);
+}
+
+.website-name .blur.blur-on {
+    transform: scale(1);
+}
+
+.website-name h1 {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    color: #fff;
+    pointer-events: none;
+    user-select: none;
+    font-family: ShamoilFont;
+}
+
+.website-name h2 {
+    position: absolute;
+    /* top: 10%; */
+    color: #fff;
+    cursor: pointer;
+    user-select: none;
+    border: 2px solid #fff;
+    padding: 6px;
+    border-radius: 10px;
+    background: #ffffff25;
+    transition: .3s;
+    font-size: 2em;
+}
+
+.website-name .create-act {
+    transform: scale(0);
+}
+
+.website-name h2:hover {
+    background: #fff;
+    color: #000;
+    border-color: #000;
+}
+
+
+
+.website-name p {
+    color: #fff;
+    font-size: 1.3em;
+    font-weight: 500;
+    margin-left: 20px;
+}
+
+
+.website-name .blur input {
+    margin: 20px;
+    padding: 6px;
+    color: #fff;
+    background: transparent;
+    /* backdrop-filter: blur(10px);  */
+    border: 1px solid white;
+    border-radius: 6px;
+    font-size: 1em;
+    transition: .3s ease;
+    outline: none;
+    font-weight: 600;
+}
+
+.website-name .blur input:focus {
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    transform: scale(1.1) translateY(-4px);
+}
+
+.website-name .submit {
+    cursor: pointer;
+    transition: .3s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.756);
+}
+
+
+.website-name h2:hover,
+.website-name .submit:hover {
+    transform: scale(1.1) translateY(-4px);
+}
+
+.website-name .blur input::placeholder {
+    color: #c5c5c5;
+}
+
+
+
+
+
+
+
+/* loading */
+
+
+
+
+
+
+.loading .baap {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* background: red; */
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    /* pointer-events: none; */
+    user-select: none;
+}
+
+.image {
+    width: 50px;
+    position: absolute;
+    top: 1px;
+    right: 1px;
+}
+
+
+.loading .baap #para {
+    top: 5%;
+    position: absolute;
+    font-family: shamoilFont;
+    font-size: 2em;
+}
+
+.loading .baap p {
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: 600;
+    font-family: sans-serif;
+    text-align: center;
+    pointer-events: none;
+    user-select: none;
+}
+
+
+.loading .baap .oneLoad {
+    background: transparent;
+    position: relative;
+    width: 54px;
+    height: 54px;
+    border: 5px #fff;
+    border-style: dashed;
+    border-radius: 100%;
+    z-index: 1000;
+    animation: LoadingAnimation 2s ease-in-out infinite;
+}
+
+
+
+@keyframes LoadingAnimation {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loading .baap .complete {
+    display: none;
+}
+
+
+body .baap {
+    display: none;
+}
