@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Maker.com</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="slider.css">
+    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="cursor.css">
+    <link rel="icon" href="../icon.png">
+</head>
+<body>
+
+    <div class="cursor"> -> </div>
+
+    
+    <div class="slider">
+        <img src="../desktop-wallpaper-kali-linux-linux.jpg" alt="Slider" class="img1 img-active">
+        <img src="../animals-kali-linux-wallpaper-preview.jpg" alt="Slider" class="img2">
+        <img src="../3.jpg" alt="Slider" class="img3">
+        <img src="../4.jpg" alt="Slider" class="img4">
+        <img src="../5.jpg" alt="Slider" class="img5">
+        <img src="../6.jpg" alt="Slider" class="img6">
+        <img src="../7.jpg" alt="Slider" class="img7">
+        <img src="../8.jpg" alt="Slider" class="img8">
+        <img src="../9.jpg" alt="Slider" class="img9">
+        <img src="image/1098082.jpg" alt="Slider" class="img10">
+        <img src="image/bubbles-background-da0xbfyvtmf5l6bf.webp" alt="Slider" class="img11">
+        <img src="image/wallpaper2you_227772.jpg" alt="Slider" class="img12">
+        <img src="image/wallpaper2you_506235.jpg" alt="Slider" class="img13">
+        <img src="image/wallpaper2you_506237.jpg" alt="Slider" class="img14">
+        <img src="image/wallpaper2you_506280.jpg" alt="Slider" class="img15">
+    </div>
+
+
+    <header class="header">
+
+        <i class="Logo"><a href="#" class="Logo for web">Website Maker </a>
+            <p style=" pointer-events:none; color:  rgba(255, 255, 255, 0.767); font-size: 17px; font-style: oblique; font-weight: 400;"
+                class="para"></p>
+        </i>
+
+        <input type="checkbox" id="check">
+
+        <label for="check" class="ShIcon">
+
+            <i class="bx bx-menu-alt-right" id="menu-icon">※</i>
+            <i class='bx bx-x' id="close-icon" style="font-style: normal;">✖</i>
+        </label>
+        <!-- <i class='bx bxl-apple' ></i> -->
+
+        <nav class="navbar">
+
+            <i style="--i:0;" class="you active"> Home </i>
+            <i style="--i:1;" class="you you2 btnLogin-popup"> Login </i>
+            <i style="--i:2;" class="you you3"><a href="../index.html" target="_blank">Create</a></i>
+            <i style="--i:3;" class="you you4"> Profile</i>
+
+        </nav>
+    </header>
+
+
+
+
+    <div class="profile">
+
+
+        <h1>Profile</h1>
+        <div class="profile-picture">
+            <div class="picture" title="Add photo">
+                <i class="bx bxs-user" id="bx_prof"><img src="" id="Default_img"></i>
+            </div>
+            <label>
+                <input type="file" name="photo" id="file">
+                <div class="camera">
+                    <i class="bx bxs-camera" title="Add photo"></i>
+                </div>
+            </label>
+        </div>
+        <p class="emailText"><i class="bx bxs-user"></i>Name :
+        <p class="palceHolder placeName">You need to Login or Register</p>
+        </p>
+        <p class="emailText"><i class="bx bxs-envelope"></i>
+            <button class="log-out"><a href="index.html">Log out</a></button>Email :
+        <p class="palceHolder placeEmail">You need to Login or Register</p>
+        </p>
+    </div>
+
+
+
+    <div class="wrapper">
+        <!-- <video src="video1.mp4" autoplay loop muted></video> -->
+
+        <i class="bx bx-x icon-close"></i>
+
+        <div class="form-box login ">
+            <h2>Login</h2>
+            <form action="index.html">
+                <div class="input-box">
+                    <input type="email" required="required" class="emailLogin">
+                    <i class='bx bxs-envelope'></i>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <input type="password" required="required" class="passwordLogin">
+                    <i class='bx bxs-lock-alt'></i>
+                    <label>Password</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">
+                        Remember me</label>
+                    <a href="#">Forgot Password</a>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <div class="register-link">
+                    <p>Don't have an account?<a href="#">Register</a></p>
+            </form>
+        </div>
+    </div>
+    <div class="form-box register ">
+        <h2>Registration</h2>
+        <form action="index.html">
+            <div class="input-box">
+                <input type="text" required="required" class="userNameReg">
+                <i class='bx bxs-user'></i>
+                <label>Username</label>
+            </div>
+            <div class="input-box">
+                <input type="email" required="required" class="emailLoginR">
+                <i class='bx bxs-envelope'></i>
+                <label>Email</label>
+
+            </div>
+            <div class="input-box">
+                <input type="password" required="required" class="passwordLogin">
+                <i class='bx bxs-lock-alt'></i>
+                <label>Password</label>
+            </div>
+            <div class="remember-forgot">
+                <label><input type="checkbox" required="required ">
+                    I agree to the terms & conditions</label>
+                <a href="#" class="dual">privacy policy</a>
+            </div>
+            <button type="submit" class="btn btnR">Register</button>
+            <div class="login-link ">
+                <p>Already have an account?<a href="#">Login</a></p>
+            </div>
+        </form>
+    </div>
+
+
+
+
+    <script aria-modal="true" src="app.js"></script>
+    <script aria-modal="true" src="slider.js"></script>
+    <script aria-modal="true" src="cursor.js"></script>
+    <script aria-modal="true" src="login.js"></script>
+    <script aria-modal="true" src="prof_image.js"></script>
+</body>
+</html>
